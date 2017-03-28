@@ -422,7 +422,8 @@ getrmse(x, y, h=24, order=c(3,0,3)) # Get order from summary(fit) above
 # Forecast values can be retreived from the forecast(fit) model, and then transformed 
 # using InvBoxCox() or revDiff()
 
-
+# The secton below isn't completed. Need to undo diffing. 
+  
 fcast <- forecast(fit, h = 12, xreg = )
 fcast$method # Gives ARIMA model used for forecast
 fcast$mean # Will give point prediction for each forecast 1:h
